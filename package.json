@@ -2,7 +2,7 @@
   "name": "dbox-agent",
   "version": "0.0.0",
   "description": "DropBox middleware",
-  "main": "index.js",
+  "main": "./lib/dbox-agent.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +16,23 @@
     "cloud",
     "file"
   ],
+  "scripts": {
+    "start": "node ./lib/dbox-agent.js"
+  },
+
+  "dependencies": {
+    "prompt": "*",
+    "dbox": "*"
+  },
+
+  "config": {
+    "default_app_key":    "4sw6yfwgccuanvo",
+    "default_app_secret": "upsu9pijrgkiqt9"
+  },
+
   "author": "mr0re1",
   "license": "BSD",
   "readmeFilename": "README.md"
+
+
 }
