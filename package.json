@@ -1,8 +1,8 @@
 {
-  "name": "dbox-agent",
+  "name": "dbox-express",
   "version": "0.0.0",
   "description": "DropBox middleware",
-  "main": "./lib/dbox-agent.js",
+  "main": "./lib/dbox-express.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,7 @@
     "file"
   ],
   "scripts": {
-    "start": "node ./lib/dbox-agent.js"
+    "start": "node ./lib/dbox-express.js"
   },
 
   "dependencies": {
