@@ -1,8 +1,8 @@
 {
-  "name": "dbox-express",
+  "name": "dbox-connect",
   "version": "0.0.0",
   "description": "DropBox middleware",
-  "main": "./lib/dbox-express.js",
+  "main": "./lib/dbox-connect.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,10 +14,12 @@
     "dropbox",
     "dbox",
     "cloud",
-    "file"
+    "file",
+    "connect",
+    "express"
   ],
   "scripts": {
-    "start": "node ./lib/dbox-express.js",
+    "start": "node ./lib/dbox-connect.js",
     "test": "./node_modules/.bin/mocha --require should --reporter spec test/all.js"
   },
 
@@ -27,7 +29,7 @@
   },
   
   "devDependencies": {
-    "express": "*",
+    "connect": "*",
     "mocha": "*",
     "should": "*",
     "supertest": "*"

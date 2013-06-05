@@ -1,14 +1,14 @@
-var express = require('express')
+var connect = require('connect')
   , request = require('supertest')
   , fs = require('fs')
-  , DBoxExpress = require('..');
+  , DBoxConnect = require('..');
 
 
 describe('DBoxExpress', function(){
-  var dbox_express = new DBoxExpress(require('./token'))
-    , app = express();
+  var dbox_connect = new DBoxConnect(require('./conf/token'))
+    , app = connect();
     
-  app.use(dbox_express.redirect('/test'));
+  app.use(dbox_connect.redirect('/test'));
   
   describe('upload', function() {
     it('should upload file')
