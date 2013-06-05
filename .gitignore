@@ -1,4 +1,5 @@
 node_modules
 tmp
 *.swp
+test/conf/token.js
 
